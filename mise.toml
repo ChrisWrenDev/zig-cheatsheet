@@ -1,0 +1,30 @@
+[tools]
+# Install and manage Zig via mise
+zig = "latest"
+# zig = "0.13.0"
+
+[env]
+# Keep Zig cache and global cache inside the project (nice for repos)
+ZIG_GLOBAL_CACHE_DIR = ".zig-cache"
+ZIG_LOCAL_CACHE_DIR = ".zig-cache"
+
+[tasks.build]
+description = "Build the Zig project"
+run = "zig build"
+
+[tasks.run]
+description = "Run the default Zig executable"
+run = "zig build run"
+# run = "zig run src/main.zig"
+
+# [tasks.example]
+# run = "zig run examples/$EXAMPLE.zig"
+
+[tasks.test]
+description = "Run Zig tests"
+run = "zig test src/main.zig"
+
+[tasks.fmt]
+description = "Format all Zig files"
+run = "zig fmt ."
+

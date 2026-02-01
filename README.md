@@ -1,5 +1,14 @@
 # Zig Cheatsheet
 
+This repository is a learning cheatsheet for Zig.
+Each example is a small, self-contained Zig program.
+
+## Running examples
+
+```bash
+zig run examples/01-hello.zig
+```
+
 ## Resources
 
 [https://ziglang.org/](https://ziglang.org/)
